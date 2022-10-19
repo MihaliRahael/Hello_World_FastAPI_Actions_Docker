@@ -13,6 +13,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      
     - uses: mr-smithers-excellent/docker-build-push@v5.8
       with:
         image: bonny2512/hello-world-action
